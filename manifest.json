@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Email Collector Dev by Shiboshree Roy",
+    "version": "1.0",
+    "description": "Author: Shiboshree Roy, Dev: Shiboshree Roy. Chrome extension to collect emails from any website.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "./Assest/icon-m.png"
+    },
+    "icons": {
+      "16": "./Assest/icon-m.png",
+      "48": "./Assest/icon-m.png",
+      "128": "./Assest/icon-m.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

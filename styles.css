@@ -1,0 +1,105 @@
+/* Base Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: #2c3e50;
+    margin: 0;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  /* Button Styling */
+  #collectEmailsBtn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #collectEmailsBtn:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  /* List Styling */
+  #emailList {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  #emailList li {
+    padding: 8px;
+    margin: 5px 0;
+    background: #34495e;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styling */
+  footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  footer h2, footer h3 {
+    margin: 5px 0;
+    font-weight: normal;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  footer h2 {
+    font-size: 14px;
+    color: #1abc9c;
+    transform: translateY(5px);
+    animation: floatUp 1.5s ease-in-out infinite alternate;
+  }
+  
+  footer h3 {
+    font-size: 12px;
+    color: #e74c3c;
+    transform: translateY(5px);
+    animation: floatUp 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes floatUp {
+    from {
+      transform: translateY(5px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+  
